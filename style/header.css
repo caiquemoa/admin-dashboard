@@ -1,4 +1,5 @@
 .header {
+	width: auto;
 	grid-area: header;
 	display: grid;
 	grid-auto-flow: column;
@@ -7,6 +8,9 @@
 	align-items: center;
 	padding: 0 16px;
 }
+/*
+Header left
+*/
 .header-start {
 	display: flex;
 	justify-content: center;
@@ -38,3 +42,64 @@
 	padding: 17px 14px 18px 16px;
 	position: relative;
 }
+/*
+Header Left
+*/
+
+/*
+Header Center
+*/
+.header-center {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	width: 50vw;
+	max-width: 730px;
+}
+.search-bar {
+	box-sizing: border-box;
+	height: 40px;
+	padding-left: 16px;
+	max-width: 540px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	border: 1px solid #b5b2b2;
+	border-top-left-radius: 24px;
+	border-bottom-left-radius: 24px;
+}
+.search {
+	height: 26px;
+	border: none;
+	width: 100%;
+}
+
+.search:focus-within {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+.header-center > button {
+	box-sizing: border-box;
+	height: 40px;
+	min-width: 64px;
+
+	background-color: #f8f8f8;
+	padding: 1px 6px;
+	cursor: pointer;
+
+	border: 1px solid #b5b2b2;
+	border-left: none;
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+}
+
+.header-center > button > img {
+	height: 25px;
+	width: 25px;
+}
+/*
+Header Center
+*/
