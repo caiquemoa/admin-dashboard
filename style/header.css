@@ -5,8 +5,36 @@
 	grid-row: 1fr 2fr 1fr;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 16px;
+}
+.header-start {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-	padding: 12px;
+.menu-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 40px;
+	max-height: 24px;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.menu-btn:hover {
+	background-color: #0000001a;
+}
 
-	border: 1px solid red;
+.menu-btn > img {
+	filter: invert(0.4);
+	width: 24px;
+	height: 24px;
+}
+
+.yt-logo {
+	width: 100px;
+	padding: 17px 14px 18px 16px;
+	position: relative;
 }
