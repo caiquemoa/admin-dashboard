@@ -1,105 +1,101 @@
 .header {
-	width: auto;
 	grid-area: header;
 	display: grid;
 	grid-auto-flow: column;
-	grid-row: 1fr 2fr 1fr;
 	justify-content: space-between;
-	align-items: center;
 	padding: 0 16px;
 }
-/*
-Header left
-*/
-.header-start {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+.svg-icon {
+	height: 24px;
+	width: 24px;
 }
 
-.menu-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	max-width: 40px;
-	max-height: 24px;
+.header-btn {
+	display: grid;
+	justify-items: center;
 	padding: 8px;
 	cursor: pointer;
-	border-radius: 50%;
+	border-radius: 100%;
+	max-width: fit-content;
 }
-.menu-btn:hover {
+.header-btn:hover {
 	background-color: #0000001a;
 }
 
-.menu-btn > img {
-	filter: invert(0.4);
-	width: 24px;
-	height: 24px;
+.header-start,
+.header-end {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+}
+.header-start {
+	max-width: fit-content;
 }
 
+.header-start > a {
+	display: flex;
+}
 .yt-logo {
-	width: 100px;
-	padding: 17px 14px 18px 16px;
-	position: relative;
+	height: 20px;
+	padding: 18px 14px 18px 16px;
 }
-/*
-Header Left
-*/
 
-/*
-Header Center
-*/
 .header-center {
 	display: flex;
+	width: 55vw;
+	max-width: 728px;
+	justify-content: center;
 	align-items: center;
-	height: 40px;
-	width: 50vw;
-	max-width: 730px;
 }
+
 .search-bar {
 	box-sizing: border-box;
-	height: 40px;
-	padding-left: 16px;
-	max-width: 540px;
-	display: flex;
-	align-items: center;
 	width: 100%;
-
-	border: 1px solid #b5b2b2;
+	max-width: 540px;
+	height: 40px;
+	padding: 0 4px 0 16px;
+	margin-left: 72px;
+	border: 1px solid #ccc;
 	border-top-left-radius: 24px;
 	border-bottom-left-radius: 24px;
-}
-.search {
-	height: 26px;
-	border: none;
-	width: 100%;
+	display: grid;
+	grid-auto-flow: column;
 }
 
-.search:focus-within {
-	outline: none;
+.search {
 	border: none;
-	box-shadow: none;
+}
+.search:focus {
+	outline: none;
 }
 
 .header-center > button {
-	box-sizing: border-box;
 	height: 40px;
-	min-width: 64px;
-
-	background-color: #f8f8f8;
+	width: 64px;
 	padding: 1px 6px;
-	cursor: pointer;
-
-	border: 1px solid #b5b2b2;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
 	border-left: none;
 	border-top-right-radius: 24px;
 	border-bottom-right-radius: 24px;
 }
 
-.header-center > button > img {
-	height: 25px;
-	width: 25px;
+.header-end {
+	width: 225px;
+	justify-content: end;
+	gap: 8px;
 }
-/*
-Header Center
-*/
+
+.avatar-btn {
+	box-sizing: border-box;
+	border-radius: 100%;
+	background-color: #ede2e2;
+	padding: 1px 6px;
+	cursor: pointer;
+}
+.avatar {
+	height: 28px;
+	width: 28px;
+	border-radius: 100%;
+}
