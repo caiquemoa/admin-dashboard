@@ -1,5 +1,33 @@
 .aside {
 	grid-area: aside;
+	padding: 0 2px;
+}
 
-	border: 1px solid blue;
+.aside ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-item {
+	box-sizing: border-box;
+	padding: 16px 0 14px;
+	border-radius: 10px;
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	gap: 6px;
+	width: 64px;
+	height: 74px;
+	font-size: 10px;
+	color: #0f0f0f;
+}
+.nav-item:hover {
+	background-color: #f8f8f8;
+}
+
+.nav-icon {
+	height: 24px;
+	width: 24px;
 }

@@ -66,6 +66,9 @@
 .search {
 	border: none;
 }
+.search::placeholder {
+	font-size: 1rem;
+}
 .search:focus {
 	outline: none;
 }
