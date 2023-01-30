@@ -4,6 +4,10 @@
 	grid-auto-flow: column;
 	justify-content: space-between;
 	padding: 0 16px;
+	width: 100%;
+	position: fixed;
+	box-sizing: border-box;
+	background-color: #fff;
 }
 
 .svg-icon {
