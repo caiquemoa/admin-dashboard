@@ -109,6 +109,10 @@
 	border-left: none;
 	border-top-right-radius: 24px;
 	border-bottom-right-radius: 24px;
+	cursor: pointer;
+}
+.header-center > button:hover {
+	background-color: #f0f0f0;
 }
 
 .header-end {
