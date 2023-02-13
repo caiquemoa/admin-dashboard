@@ -3,15 +3,12 @@
 }
 
 .content {
-	padding: 20px 40px;
+	padding: 20px 20px;
 	height: fit-content;
 	display: grid;
 	overflow: auto;
 	gap: 15px;
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(clamp(200px, 250px, 300px), 1fr)
-	);
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .video {

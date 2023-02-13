@@ -45,9 +45,32 @@
 	padding: 18px 14px 18px 16px;
 }
 
+@media screen and (max-width: 900px) {
+	div.search-bar {
+		width: 20vw;
+		margin: 0;
+	}
+	div.header-end {
+		width: unset;
+		justify-content: end;
+		gap: 8px;
+	}
+}
+@media screen and (max-width: 530px) {
+	div.header-center {
+		display: none;
+	}
+	div.header-end {
+		width: unset;
+		justify-content: end;
+		gap: 8px;
+	}
+}
+
 .header-center {
 	display: flex;
-	width: 55vw;
+	min-width: fit-content;
+	width: 100%;
 	max-width: 728px;
 	justify-content: center;
 	align-items: center;
@@ -55,7 +78,7 @@
 
 .search-bar {
 	box-sizing: border-box;
-	width: 100%;
+	width: 40vw;
 	max-width: 540px;
 	height: 40px;
 	padding: 0 4px 0 16px;
