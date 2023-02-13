@@ -7,12 +7,38 @@
 	height: fit-content;
 	display: grid;
 	overflow: auto;
-	gap: 10px;
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 15px;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(clamp(200px, 250px, 300px), 1fr)
+	);
 }
 
-.content iframe {
-	height: 100%;
-	width: 100%;
+.video {
+	display: grid;
+	gap: 12px;
+	margin-bottom: 30px;
+}
+.video > img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.description {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+.info {
+	display: grid;
+}
+.title {
+	font-size: 0.875rem;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.channel,
+.stats {
+	font-weight: 100;
+	font-size: 0.75rem;
 }

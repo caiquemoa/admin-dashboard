@@ -2,6 +2,7 @@
 	grid-area: aside;
 	padding: 0 2px;
 	position: fixed;
+	top: 60px;
 }
 
 .aside ul {
@@ -15,17 +16,28 @@
 	padding: 16px 0 14px;
 	border-radius: 10px;
 	display: grid;
+
 	justify-content: center;
 	justify-items: center;
 	align-content: center;
 	gap: 6px;
 	width: 64px;
 	height: 74px;
-	font-size: 10px;
-	color: #0f0f0f;
+	cursor: pointer;
+	text-overflow: ellipsis;
 }
 .nav-item:hover {
 	background-color: #f8f8f8;
+}
+
+.nav-item > span {
+	font-size: 0.625rem;
+	color: #0f0f0f;
+	width: 64px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
 }
 
 .nav-icon {
